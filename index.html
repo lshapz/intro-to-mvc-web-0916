@@ -1,28 +1,28 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <script src="lib/jquery-1.js"> </script>
-  <script src="lib/index.js"> </script>
+  <script src="./lib/jquery-1.js"> </script>
+  <script src="./lib/index.js"> </script>
+  <title></title>
 </head>
 <body>
-  <div class="container">
-  <ul>
-    <li> name: bob hometown: philly </li>
-  </ul>
-</div>
 
-  <form >
-    <h1> Teacher </h1>
-    <p> <label for="">Name</label>
-    <input type="text" name="student[name]">
-    </p>
-    <p>
-    <label for="">Hometown</label>
-    <input type="text" name="student[hometown]">
-    </p>
-    <input type="submit">
-  </form>
+<form>
+<p><label for="teacher"></label><input type="text" id="teacher"></p>
+<p><label for="hometown"></label><input type="text" id="hometown"></p>
+<p><input type="submit" id="button"></p>
+</form>
+
+<script>
+$( "#button" ).click(function( event ) {
+  event.preventDefault();
+  runQuery();
+});
+</script>
+
+<div id="help"></div>
+
+
 </body>
 </html>
