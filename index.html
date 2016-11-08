@@ -7,19 +7,18 @@
   <title></title>
 </head>
 <body>
+  <div class="container">
+  <ul>
+
+  </ul>
+</div>
 
 <form>
-<p><label for="teacher"></label><input type="text" id="teacher"></p>
-<p><label for="hometown"></label><input type="text" id="hometown"></p>
+<p><label for="teacher"></label><input type="text" id="teacher[name]"></p>
+<p><label for="hometown"></label><input type="text" id="teacher[hometown]"></p>
 <p><input type="submit" id="button"></p>
 </form>
 
-<script>
-$( "#button" ).click(function( event ) {
-  event.preventDefault();
-  runQuery();
-});
-</script>
 
 <div id="help"></div>
 
